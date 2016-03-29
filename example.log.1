@@ -1,0 +1,1210 @@
+DEBUG main com.documentum.fc.client.impl.objectprotocol.ObjectProtocolV1 - deserializeType: 2
+TYPE dm_sysobject 030011f080000105 21 0 0
+ NULL 
+ NULL 
+ NULL F
+85
+B  object_name  STRING S 255 0
+C  r_object_type  STRING S 32 0
+D  title  STRING S 400 0
+E  subject  STRING S 192 0
+F  authors  STRING R 48 0
+G  keywords  STRING R 48 0
+H  a_application_type  STRING S 32 0
+I  a_status  STRING S 16 0
+J  r_creation_date  TIME S 0 0
+K  r_modify_date  TIME S 0 0
+L  r_modifier  STRING S 32 0
+M  r_access_date  TIME S 0 0
+N  a_is_hidden  BOOL S 0 0
+O  i_is_deleted  BOOL S 0 0
+P  a_retention_date  TIME S 0 0
+Q  a_archive  BOOL S 0 0
+R  a_compound_architecture  STRING S 16 0
+S  a_link_resolved  BOOL S 0 0
+T  i_reference_cnt  INT S 0 0
+U  i_has_folder  BOOL S 0 0
+V  i_folder_id  ID R 0 0
+W  r_composite_id  ID R 0 0
+X  r_composite_label  STRING R 32 0
+Y  r_component_label  STRING R 32 0
+Z  r_order_no  INT R 0 0
+a  r_link_cnt  INT S 0 0
+b  r_link_high_cnt  INT S 0 0
+c  r_assembled_from_id  ID S 0 0
+d  r_frzn_assembly_cnt  INT S 0 0
+e  r_has_frzn_assembly  BOOL S 0 0
+f  resolution_label  STRING S 32 0
+g  r_is_virtual_doc  INT S 0 0
+h  i_contents_id  ID S 0 0
+i  a_content_type  STRING S 32 0
+j  r_page_cnt  INT S 0 0
+k  r_content_size  INT S 0 0
+l  a_full_text  BOOL S 0 0
+m  a_storage_type  STRING S 64 0
+n  i_cabinet_id  ID S 0 0
+o  owner_name  STRING S 32 0
+p  owner_permit  INT S 0 0
+q  group_name  STRING S 32 0
+r  group_permit  INT S 0 0
+s  world_permit  INT S 0 0
+t  i_antecedent_id  ID S 0 0
+u  i_chronicle_id  ID S 0 0
+v  i_latest_flag  BOOL S 0 0
+w  r_lock_owner  STRING S 32 0
+x  r_lock_date  TIME S 0 0
+y  r_lock_machine  STRING S 80 0
+z  log_entry  STRING S 120 0
+0  r_version_label  STRING R 32 0
+1  i_branch_cnt  INT S 0 0
+2  i_direct_dsc  BOOL S 0 0
+3  r_immutable_flag  BOOL S 0 0
+4  r_frozen_flag  BOOL S 0 0
+5  r_has_events  BOOL S 0 0
+6  acl_domain  STRING S 32 0
+7  acl_name  STRING S 32 0
+8  a_special_app  STRING S 32 0
+9  i_is_reference  BOOL S 0 0
++  r_creator_name  STRING S 32 0
+/  r_is_public  BOOL S 0 0
+AB  r_policy_id  ID S 0 0
+BB  r_resume_state  INT S 0 0
+CB  r_current_state  INT S 0 0
+DB  r_alias_set_id  ID S 0 0
+EB  a_effective_date  TIME R 0 0
+FB  a_expiration_date  TIME R 0 0
+GB  a_publish_formats  STRING R 32 0
+HB  a_effective_label  STRING R 32 0
+IB  a_effective_flag  STRING R 8 0
+JB  a_category  STRING S 64 0
+KB  language_code  STRING S 5 0
+LB  i_is_replica  BOOL S 0 0
+MB  a_is_template  BOOL S 0 0
+NB  a_controlling_app  STRING S 32 0
+OB  r_full_content_size  DOUBLE S 0 0
+PB  a_extended_properties  STRING R 32 0
+QB  a_is_signed  BOOL S 0 0
+RB  a_last_review_date  TIME S 0 0
+SB  i_retain_until  TIME S 0 0
+TB  r_aspect_name  STRING R 64 0
+UB  i_retainer_id  ID R 16 0
+VB  i_vstamp  INT S 0 0
+
+TYPE dm_folder 030011f08000011f 21 0 0
+dm_sysobject
+ NULL 
+ NULL F
+2
+zB  r_folder_path  STRING R 740 0
+0B  i_ancestor_id  ID R 0 0
+
+
+DEBUG main com.documentum.fc.client.impl.objectprotocol.ObjectProtocolV1 - deserializeType: 2
+TYPE dm_sysobject 030011f080000105 21 0 0
+ NULL 
+ NULL 
+ NULL F
+85
+B  object_name  STRING S 255 0
+C  r_object_type  STRING S 32 0
+D  title  STRING S 400 0
+E  subject  STRING S 192 0
+F  authors  STRING R 48 0
+G  keywords  STRING R 48 0
+H  a_application_type  STRING S 32 0
+I  a_status  STRING S 16 0
+J  r_creation_date  TIME S 0 0
+K  r_modify_date  TIME S 0 0
+L  r_modifier  STRING S 32 0
+M  r_access_date  TIME S 0 0
+N  a_is_hidden  BOOL S 0 0
+O  i_is_deleted  BOOL S 0 0
+P  a_retention_date  TIME S 0 0
+Q  a_archive  BOOL S 0 0
+R  a_compound_architecture  STRING S 16 0
+S  a_link_resolved  BOOL S 0 0
+T  i_reference_cnt  INT S 0 0
+U  i_has_folder  BOOL S 0 0
+V  i_folder_id  ID R 0 0
+W  r_composite_id  ID R 0 0
+X  r_composite_label  STRING R 32 0
+Y  r_component_label  STRING R 32 0
+Z  r_order_no  INT R 0 0
+a  r_link_cnt  INT S 0 0
+b  r_link_high_cnt  INT S 0 0
+c  r_assembled_from_id  ID S 0 0
+d  r_frzn_assembly_cnt  INT S 0 0
+e  r_has_frzn_assembly  BOOL S 0 0
+f  resolution_label  STRING S 32 0
+g  r_is_virtual_doc  INT S 0 0
+h  i_contents_id  ID S 0 0
+i  a_content_type  STRING S 32 0
+j  r_page_cnt  INT S 0 0
+k  r_content_size  INT S 0 0
+l  a_full_text  BOOL S 0 0
+m  a_storage_type  STRING S 64 0
+n  i_cabinet_id  ID S 0 0
+o  owner_name  STRING S 32 0
+p  owner_permit  INT S 0 0
+q  group_name  STRING S 32 0
+r  group_permit  INT S 0 0
+s  world_permit  INT S 0 0
+t  i_antecedent_id  ID S 0 0
+u  i_chronicle_id  ID S 0 0
+v  i_latest_flag  BOOL S 0 0
+w  r_lock_owner  STRING S 32 0
+x  r_lock_date  TIME S 0 0
+y  r_lock_machine  STRING S 80 0
+z  log_entry  STRING S 120 0
+0  r_version_label  STRING R 32 0
+1  i_branch_cnt  INT S 0 0
+2  i_direct_dsc  BOOL S 0 0
+3  r_immutable_flag  BOOL S 0 0
+4  r_frozen_flag  BOOL S 0 0
+5  r_has_events  BOOL S 0 0
+6  acl_domain  STRING S 32 0
+7  acl_name  STRING S 32 0
+8  a_special_app  STRING S 32 0
+9  i_is_reference  BOOL S 0 0
++  r_creator_name  STRING S 32 0
+/  r_is_public  BOOL S 0 0
+AB  r_policy_id  ID S 0 0
+BB  r_resume_state  INT S 0 0
+CB  r_current_state  INT S 0 0
+DB  r_alias_set_id  ID S 0 0
+EB  a_effective_date  TIME R 0 0
+FB  a_expiration_date  TIME R 0 0
+GB  a_publish_formats  STRING R 32 0
+HB  a_effective_label  STRING R 32 0
+IB  a_effective_flag  STRING R 8 0
+JB  a_category  STRING S 64 0
+KB  language_code  STRING S 5 0
+LB  i_is_replica  BOOL S 0 0
+MB  a_is_template  BOOL S 0 0
+NB  a_controlling_app  STRING S 32 0
+OB  r_full_content_size  DOUBLE S 0 0
+PB  a_extended_properties  STRING R 32 0
+QB  a_is_signed  BOOL S 0 0
+RB  a_last_review_date  TIME S 0 0
+SB  i_retain_until  TIME S 0 0
+TB  r_aspect_name  STRING R 64 0
+UB  i_retainer_id  ID R 16 0
+VB  i_vstamp  INT S 0 0
+
+TYPE dm_folder 030011f08000011f 21 0 0
+dm_sysobject
+ NULL 
+ NULL F
+2
+zB  r_folder_path  STRING R 740 0
+0B  i_ancestor_id  ID R 0 0
+
+
+DEBUG main com.documentum.fc.client.impl.dd.DDInfoManager - Using cached data for tdm_sysobject:de:juventus
+INFO main com.alstom.dfc.Standalone - Application done.
+INFO main com.alstom.dfc.Standalone - Application starting.
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.isEncrypted(DfPreferences.java:2020)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2012)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.security.impl.JKSKeystoreUtilForDfc - keystore file name is C:\Users\Marcin\workspace-trainings\DFCalstom\bin\dfc.keystore
+INFO main com.documentum.fc.client.security.impl.InitializeKeystoreForDfc - [DFC_SECURITY_IDENTITY_LOADED] Loaded identity from keystore, DFC alias=dfc, identity=dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.client.security.impl.AuthenticationMgrForDfc - identity for authentication is dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.impl.RuntimeContext - DFC Version is 7.1.0000.0098
+INFO Timer-1 com.documentum.fc.client.impl.bof.cache.ClassCacheManager$CacheCleanupTask - [DFC_BOF_RUNNING_CLEANUP] Running class cache cleanup task
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.get(DfPreferences.java:1973)
+	at com.documentum.fc.client.DfTypedObject.doGetString(DfTypedObject.java:619)
+	at com.documentum.fc.client.DfTypedObject.getString(DfTypedObject.java:597)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.getString(TypedPreferences.java:154)
+	at com.documentum.fc.client.DfTypedObject.getStringUnchecked(DfTypedObject.java:674)
+	at com.documentum.fc.common.DfPreferences.getGlobalRegistryPassword(DfPreferences.java:1110)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getSboHostLoginInfo(ModuleManager.java:409)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:381)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.documentum.fc.client.security.internal.AuthenticationMgr - new identity bundle <dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka	1416988747	beherit		lURmyPE+Z47E0Mkkn62iPfUJ2UwgIcT5xOr3ljBrdbOZ42abca0zd/bq3Na6wPt/z2mjeD9MrZwNA4Cqyvir6LhtnJpguFbWU9Fa8S0irfsHmUhZLgtOCOiOubAH922uLIhiP+q2+OmqAO9LP0nwWENs/Her5kpT5A2rNbslnC0=>
+WARN main com.documentum.fc.client.impl.bof.classmgmt.ModuleManager - [DFC_BOF_COULDNT_CONNECT_TO_REGISTRY] Unable to connect to module registry, docbase name juventus username dm_bof_registry.
+DfAuthenticationException:: THREAD: main; MSG: [DM_SESSION_E_AUTH_FAIL]error:  "Authentication failed for user dm_bof_registry with docbase juventus."; ERRORCODE: 100; NEXT: null
+	at com.documentum.fc.client.impl.docbase.DocbaseExceptionMapper.newException(DocbaseExceptionMapper.java:52)
+	at com.documentum.fc.client.impl.connection.docbase.MessageEntry.getException(MessageEntry.java:39)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseMessageManager.getException(DocbaseMessageManager.java:137)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.checkForMessages(NetwiseDocbaseRpcClient.java:310)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.applyForObject(NetwiseDocbaseRpcClient.java:653)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection$8.evaluate(DocbaseConnection.java:1370)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.evaluateRpc(DocbaseConnection.java:1129)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.applyForObject(DocbaseConnection.java:1362)
+	at com.documentum.fc.client.impl.docbase.DocbaseApi.authenticateUser(DocbaseApi.java:1867)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.authenticate(DocbaseConnection.java:435)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.open(DocbaseConnection.java:130)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:99)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:59)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionFactory.newDocbaseConnection(DocbaseConnectionFactory.java:26)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.createNewConnection(DocbaseConnectionManager.java:180)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.getDocbaseConnection(DocbaseConnectionManager.java:110)
+	at com.documentum.fc.client.impl.session.SessionFactory.newSession(SessionFactory.java:23)
+	at com.documentum.fc.client.impl.session.PrincipalAwareSessionFactory.newSession(PrincipalAwareSessionFactory.java:44)
+	at com.documentum.fc.client.impl.session.PooledSessionFactory.newSession(PooledSessionFactory.java:49)
+	at com.documentum.fc.client.impl.session.SessionManager.getSessionFromFactory(SessionManager.java:120)
+	at com.documentum.fc.client.impl.session.SessionManager.newSession(SessionManager.java:70)
+	at com.documentum.fc.client.impl.session.SessionManager.getSession(SessionManager.java:177)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:385)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.client.security.internal.RegistrationMgr - [DFC_SECURITY_GR_PUBLICATION_FAILED] Publication of DFC instance with global registry failed
+DfException:: THREAD: main; MSG: [DFC_BOF_GLOBAL_REGISTRY_UNAVAILABLE] Unable to connect to the global registry no session; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:55)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.alstom.dfc.Standalone - Application done.
+INFO main com.alstom.dfc.Standalone - Application starting.
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.isEncrypted(DfPreferences.java:2020)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2012)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.security.impl.JKSKeystoreUtilForDfc - keystore file name is C:\Users\Marcin\workspace-trainings\DFCalstom\bin\dfc.keystore
+INFO main com.documentum.fc.client.security.impl.InitializeKeystoreForDfc - [DFC_SECURITY_IDENTITY_LOADED] Loaded identity from keystore, DFC alias=dfc, identity=dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.client.security.impl.AuthenticationMgrForDfc - identity for authentication is dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.impl.RuntimeContext - DFC Version is 7.1.0000.0098
+INFO Timer-1 com.documentum.fc.client.impl.bof.cache.ClassCacheManager$CacheCleanupTask - [DFC_BOF_RUNNING_CLEANUP] Running class cache cleanup task
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.get(DfPreferences.java:1973)
+	at com.documentum.fc.client.DfTypedObject.doGetString(DfTypedObject.java:619)
+	at com.documentum.fc.client.DfTypedObject.getString(DfTypedObject.java:597)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.getString(TypedPreferences.java:154)
+	at com.documentum.fc.client.DfTypedObject.getStringUnchecked(DfTypedObject.java:674)
+	at com.documentum.fc.common.DfPreferences.getGlobalRegistryPassword(DfPreferences.java:1110)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getSboHostLoginInfo(ModuleManager.java:409)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:381)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.documentum.fc.client.security.internal.AuthenticationMgr - new identity bundle <dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka	1416988833	beherit		WA7OOEGTAZqr5yg7e4kjn9q0/Kh5BbSknD/0Gm7eank3Vt5Q5VQF5jCiOMpxJ+WbMV6/Fqvu2TQO726fdIuw1UMkU782WU98IWLERdHH3d2Y3GiPFAM+AiOHOYndXAlj/3cLGIYm0LaZntTLHLiH753/N5Z3/FyFFSVEa0kE6S0=>
+WARN main com.documentum.fc.client.impl.bof.classmgmt.ModuleManager - [DFC_BOF_COULDNT_CONNECT_TO_REGISTRY] Unable to connect to module registry, docbase name juventus username dm_bof_registry.
+DfAuthenticationException:: THREAD: main; MSG: [DM_SESSION_E_AUTH_FAIL]error:  "Authentication failed for user dm_bof_registry with docbase juventus."; ERRORCODE: 100; NEXT: null
+	at com.documentum.fc.client.impl.docbase.DocbaseExceptionMapper.newException(DocbaseExceptionMapper.java:52)
+	at com.documentum.fc.client.impl.connection.docbase.MessageEntry.getException(MessageEntry.java:39)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseMessageManager.getException(DocbaseMessageManager.java:137)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.checkForMessages(NetwiseDocbaseRpcClient.java:310)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.applyForObject(NetwiseDocbaseRpcClient.java:653)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection$8.evaluate(DocbaseConnection.java:1370)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.evaluateRpc(DocbaseConnection.java:1129)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.applyForObject(DocbaseConnection.java:1362)
+	at com.documentum.fc.client.impl.docbase.DocbaseApi.authenticateUser(DocbaseApi.java:1867)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.authenticate(DocbaseConnection.java:435)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.open(DocbaseConnection.java:130)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:99)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:59)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionFactory.newDocbaseConnection(DocbaseConnectionFactory.java:26)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.createNewConnection(DocbaseConnectionManager.java:180)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.getDocbaseConnection(DocbaseConnectionManager.java:110)
+	at com.documentum.fc.client.impl.session.SessionFactory.newSession(SessionFactory.java:23)
+	at com.documentum.fc.client.impl.session.PrincipalAwareSessionFactory.newSession(PrincipalAwareSessionFactory.java:44)
+	at com.documentum.fc.client.impl.session.PooledSessionFactory.newSession(PooledSessionFactory.java:49)
+	at com.documentum.fc.client.impl.session.SessionManager.getSessionFromFactory(SessionManager.java:120)
+	at com.documentum.fc.client.impl.session.SessionManager.newSession(SessionManager.java:70)
+	at com.documentum.fc.client.impl.session.SessionManager.getSession(SessionManager.java:177)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:385)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.client.security.internal.RegistrationMgr - [DFC_SECURITY_GR_PUBLICATION_FAILED] Publication of DFC instance with global registry failed
+DfException:: THREAD: main; MSG: [DFC_BOF_GLOBAL_REGISTRY_UNAVAILABLE] Unable to connect to the global registry no session; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:55)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.alstom.dfc.Standalone - Application starting.
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.isEncrypted(DfPreferences.java:2020)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2012)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.security.impl.JKSKeystoreUtilForDfc - keystore file name is C:\Users\Marcin\workspace-trainings\DFCalstom\bin\dfc.keystore
+INFO main com.documentum.fc.client.security.impl.InitializeKeystoreForDfc - [DFC_SECURITY_IDENTITY_LOADED] Loaded identity from keystore, DFC alias=dfc, identity=dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.client.security.impl.AuthenticationMgrForDfc - identity for authentication is dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.impl.RuntimeContext - DFC Version is 7.1.0000.0098
+INFO Timer-1 com.documentum.fc.client.impl.bof.cache.ClassCacheManager$CacheCleanupTask - [DFC_BOF_RUNNING_CLEANUP] Running class cache cleanup task
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.get(DfPreferences.java:1973)
+	at com.documentum.fc.client.DfTypedObject.doGetString(DfTypedObject.java:619)
+	at com.documentum.fc.client.DfTypedObject.getString(DfTypedObject.java:597)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.getString(TypedPreferences.java:154)
+	at com.documentum.fc.client.DfTypedObject.getStringUnchecked(DfTypedObject.java:674)
+	at com.documentum.fc.common.DfPreferences.getGlobalRegistryPassword(DfPreferences.java:1110)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getSboHostLoginInfo(ModuleManager.java:409)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:381)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.documentum.fc.client.security.internal.AuthenticationMgr - new identity bundle <dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka	1416989466	beherit		3iVvoWIj3yW7Y/DLzN/ovEU9c12onPR6peuD/t9Bs1GXDxNdNyfyIQdq4oH9Cy137trhSCE8myPNrB08jzd5TXismlPbbMHa3q8TGE9e3hqOlGN81AaeVOtW50MJSArlpRa311CT6v52kDc74i31/tJdE4yXpzg3NOAPdfTiIlo=>
+WARN main com.documentum.fc.client.impl.bof.classmgmt.ModuleManager - [DFC_BOF_COULDNT_CONNECT_TO_REGISTRY] Unable to connect to module registry, docbase name juventus username dm_bof_registry.
+DfAuthenticationException:: THREAD: main; MSG: [DM_SESSION_E_AUTH_FAIL]error:  "Authentication failed for user dm_bof_registry with docbase juventus."; ERRORCODE: 100; NEXT: null
+	at com.documentum.fc.client.impl.docbase.DocbaseExceptionMapper.newException(DocbaseExceptionMapper.java:52)
+	at com.documentum.fc.client.impl.connection.docbase.MessageEntry.getException(MessageEntry.java:39)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseMessageManager.getException(DocbaseMessageManager.java:137)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.checkForMessages(NetwiseDocbaseRpcClient.java:310)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.applyForObject(NetwiseDocbaseRpcClient.java:653)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection$8.evaluate(DocbaseConnection.java:1370)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.evaluateRpc(DocbaseConnection.java:1129)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.applyForObject(DocbaseConnection.java:1362)
+	at com.documentum.fc.client.impl.docbase.DocbaseApi.authenticateUser(DocbaseApi.java:1867)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.authenticate(DocbaseConnection.java:435)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.open(DocbaseConnection.java:130)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:99)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:59)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionFactory.newDocbaseConnection(DocbaseConnectionFactory.java:26)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.createNewConnection(DocbaseConnectionManager.java:180)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.getDocbaseConnection(DocbaseConnectionManager.java:110)
+	at com.documentum.fc.client.impl.session.SessionFactory.newSession(SessionFactory.java:23)
+	at com.documentum.fc.client.impl.session.PrincipalAwareSessionFactory.newSession(PrincipalAwareSessionFactory.java:44)
+	at com.documentum.fc.client.impl.session.PooledSessionFactory.newSession(PooledSessionFactory.java:49)
+	at com.documentum.fc.client.impl.session.SessionManager.getSessionFromFactory(SessionManager.java:120)
+	at com.documentum.fc.client.impl.session.SessionManager.newSession(SessionManager.java:70)
+	at com.documentum.fc.client.impl.session.SessionManager.getSession(SessionManager.java:177)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:385)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.client.security.internal.RegistrationMgr - [DFC_SECURITY_GR_PUBLICATION_FAILED] Publication of DFC instance with global registry failed
+DfException:: THREAD: main; MSG: [DFC_BOF_GLOBAL_REGISTRY_UNAVAILABLE] Unable to connect to the global registry no session; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:55)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:39)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.alstom.dfc.Standalone - Application starting.
+INFO main com.alstom.dfc.Standalone - Application done.
+INFO main com.alstom.dfc.Standalone - Application starting.
+INFO main com.alstom.dfc.Standalone - Application done.
+INFO main com.alstom.dfc.Standalone - Application starting.
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.isEncrypted(DfPreferences.java:2020)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2012)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.security.impl.JKSKeystoreUtilForDfc - keystore file name is C:\Users\Marcin\workspace-trainings\DFCalstom\bin\dfc.keystore
+INFO main com.documentum.fc.client.security.impl.InitializeKeystoreForDfc - [DFC_SECURITY_IDENTITY_LOADED] Loaded identity from keystore, DFC alias=dfc, identity=dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.client.security.impl.AuthenticationMgrForDfc - identity for authentication is dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.impl.RuntimeContext - DFC Version is 7.1.0000.0098
+INFO Timer-1 com.documentum.fc.client.impl.bof.cache.ClassCacheManager$CacheCleanupTask - [DFC_BOF_RUNNING_CLEANUP] Running class cache cleanup task
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.get(DfPreferences.java:1973)
+	at com.documentum.fc.client.DfTypedObject.doGetString(DfTypedObject.java:619)
+	at com.documentum.fc.client.DfTypedObject.getString(DfTypedObject.java:597)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.getString(TypedPreferences.java:154)
+	at com.documentum.fc.client.DfTypedObject.getStringUnchecked(DfTypedObject.java:674)
+	at com.documentum.fc.common.DfPreferences.getGlobalRegistryPassword(DfPreferences.java:1110)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getSboHostLoginInfo(ModuleManager.java:409)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:381)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.documentum.fc.client.security.internal.AuthenticationMgr - new identity bundle <dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka	1416989736	beherit		aF3TSHE3I6dQe+ovjtxtl2srU1eYoubApx/M2GON/RiHwpoun/NHnn2azVQxZVirp6Rya8Dlw2wD9SvFmjHdOCN7dbnWS/DsJmpUAYH1/FLNy9t1ypYv2d0Ac4tLdumcx3WduLgJJYBUAF3zI/TEmndjCR7wich0e0ey+Z47IsY=>
+WARN main com.documentum.fc.client.impl.bof.classmgmt.ModuleManager - [DFC_BOF_COULDNT_CONNECT_TO_REGISTRY] Unable to connect to module registry, docbase name juventus username dm_bof_registry.
+DfAuthenticationException:: THREAD: main; MSG: [DM_SESSION_E_AUTH_FAIL]error:  "Authentication failed for user dm_bof_registry with docbase juventus."; ERRORCODE: 100; NEXT: null
+	at com.documentum.fc.client.impl.docbase.DocbaseExceptionMapper.newException(DocbaseExceptionMapper.java:52)
+	at com.documentum.fc.client.impl.connection.docbase.MessageEntry.getException(MessageEntry.java:39)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseMessageManager.getException(DocbaseMessageManager.java:137)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.checkForMessages(NetwiseDocbaseRpcClient.java:310)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.applyForObject(NetwiseDocbaseRpcClient.java:653)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection$8.evaluate(DocbaseConnection.java:1370)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.evaluateRpc(DocbaseConnection.java:1129)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.applyForObject(DocbaseConnection.java:1362)
+	at com.documentum.fc.client.impl.docbase.DocbaseApi.authenticateUser(DocbaseApi.java:1867)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.authenticate(DocbaseConnection.java:435)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.open(DocbaseConnection.java:130)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:99)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:59)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionFactory.newDocbaseConnection(DocbaseConnectionFactory.java:26)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.createNewConnection(DocbaseConnectionManager.java:180)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.getDocbaseConnection(DocbaseConnectionManager.java:110)
+	at com.documentum.fc.client.impl.session.SessionFactory.newSession(SessionFactory.java:23)
+	at com.documentum.fc.client.impl.session.PrincipalAwareSessionFactory.newSession(PrincipalAwareSessionFactory.java:44)
+	at com.documentum.fc.client.impl.session.PooledSessionFactory.newSession(PooledSessionFactory.java:49)
+	at com.documentum.fc.client.impl.session.SessionManager.getSessionFromFactory(SessionManager.java:120)
+	at com.documentum.fc.client.impl.session.SessionManager.newSession(SessionManager.java:70)
+	at com.documentum.fc.client.impl.session.SessionManager.getSession(SessionManager.java:177)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:385)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.client.security.internal.RegistrationMgr - [DFC_SECURITY_GR_PUBLICATION_FAILED] Publication of DFC instance with global registry failed
+DfException:: THREAD: main; MSG: [DFC_BOF_GLOBAL_REGISTRY_UNAVAILABLE] Unable to connect to the global registry no session; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:55)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:42)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.alstom.dfc.Standalone - Application done.
+INFO main com.alstom.dfc.Standalone - Application starting.
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.isEncrypted(DfPreferences.java:2020)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2012)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.security.impl.JKSKeystoreUtilForDfc - keystore file name is C:\Users\Marcin\workspace-trainings\DFCalstom\bin\dfc.keystore
+INFO main com.documentum.fc.client.security.impl.InitializeKeystoreForDfc - [DFC_SECURITY_IDENTITY_LOADED] Loaded identity from keystore, DFC alias=dfc, identity=dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.client.security.impl.AuthenticationMgrForDfc - identity for authentication is dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.impl.RuntimeContext - DFC Version is 7.1.0000.0098
+INFO Timer-1 com.documentum.fc.client.impl.bof.cache.ClassCacheManager$CacheCleanupTask - [DFC_BOF_RUNNING_CLEANUP] Running class cache cleanup task
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.get(DfPreferences.java:1973)
+	at com.documentum.fc.client.DfTypedObject.doGetString(DfTypedObject.java:619)
+	at com.documentum.fc.client.DfTypedObject.getString(DfTypedObject.java:597)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.getString(TypedPreferences.java:154)
+	at com.documentum.fc.client.DfTypedObject.getStringUnchecked(DfTypedObject.java:674)
+	at com.documentum.fc.common.DfPreferences.getGlobalRegistryPassword(DfPreferences.java:1110)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getSboHostLoginInfo(ModuleManager.java:409)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:381)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.documentum.fc.client.security.internal.AuthenticationMgr - new identity bundle <dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka	1417001393	beherit		vS+wanfiuKBwsiyzfI8A2iebIwtSWfTBikRxM9RLW+xFG9b70lvY9pukR0Hjs1LxW0IwZgHJbLZu+qaJcZ4U3BLnZADx/n9y8uuLRWFes0RLYGc/RhFte0U+be5/OSENcfe+RmkBbIQSMgDcjLawueD7mlhKMHUguI0Z6rXVPmc=>
+WARN main com.documentum.fc.client.impl.bof.classmgmt.ModuleManager - [DFC_BOF_COULDNT_CONNECT_TO_REGISTRY] Unable to connect to module registry, docbase name juventus username dm_bof_registry.
+DfAuthenticationException:: THREAD: main; MSG: [DM_SESSION_E_AUTH_FAIL]error:  "Authentication failed for user dm_bof_registry with docbase juventus."; ERRORCODE: 100; NEXT: null
+	at com.documentum.fc.client.impl.docbase.DocbaseExceptionMapper.newException(DocbaseExceptionMapper.java:52)
+	at com.documentum.fc.client.impl.connection.docbase.MessageEntry.getException(MessageEntry.java:39)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseMessageManager.getException(DocbaseMessageManager.java:137)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.checkForMessages(NetwiseDocbaseRpcClient.java:310)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.applyForObject(NetwiseDocbaseRpcClient.java:653)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection$8.evaluate(DocbaseConnection.java:1370)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.evaluateRpc(DocbaseConnection.java:1129)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.applyForObject(DocbaseConnection.java:1362)
+	at com.documentum.fc.client.impl.docbase.DocbaseApi.authenticateUser(DocbaseApi.java:1867)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.authenticate(DocbaseConnection.java:435)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.open(DocbaseConnection.java:130)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:99)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:59)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionFactory.newDocbaseConnection(DocbaseConnectionFactory.java:26)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.createNewConnection(DocbaseConnectionManager.java:180)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.getDocbaseConnection(DocbaseConnectionManager.java:110)
+	at com.documentum.fc.client.impl.session.SessionFactory.newSession(SessionFactory.java:23)
+	at com.documentum.fc.client.impl.session.PrincipalAwareSessionFactory.newSession(PrincipalAwareSessionFactory.java:44)
+	at com.documentum.fc.client.impl.session.PooledSessionFactory.newSession(PooledSessionFactory.java:49)
+	at com.documentum.fc.client.impl.session.SessionManager.getSessionFromFactory(SessionManager.java:120)
+	at com.documentum.fc.client.impl.session.SessionManager.newSession(SessionManager.java:70)
+	at com.documentum.fc.client.impl.session.SessionManager.getSession(SessionManager.java:177)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:385)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.client.security.internal.RegistrationMgr - [DFC_SECURITY_GR_PUBLICATION_FAILED] Publication of DFC instance with global registry failed
+DfException:: THREAD: main; MSG: [DFC_BOF_GLOBAL_REGISTRY_UNAVAILABLE] Unable to connect to the global registry no session; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:55)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.alstom.dfc.Standalone - Application done.
+INFO main com.alstom.dfc.Standalone - Application starting.
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.isEncrypted(DfPreferences.java:2020)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2012)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:38)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.encryptIfNecessary(DfPreferences.java:1986)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.set(DfPreferences.java:1979)
+	at com.documentum.fc.common.DfPreferences$EncryptedPasswordHandler.set(DfPreferences.java:2013)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+ERROR main com.documentum.fc.common.DfPreferences - [DFC_PREFERENCE_BAD_VALUE] Bad value for preference "dfc.security.keystore.file", value="/export/home/dmadmin/shared/config/dfc.keystore"
+DfAttributeValueException:: THREAD: main; MSG: [DFC_OBJECT_BADATTRVALUE] Directory doesn't exist; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.client.attributehandler.DfFileFilter.verifyExistence(DfFileFilter.java:54)
+	at com.documentum.fc.client.attributehandler.DfFileFilter.set(DfFileFilter.java:25)
+	at com.documentum.fc.client.DfTypedObject.doSetString(DfTypedObject.java:1441)
+	at com.documentum.fc.client.DfTypedObject.setString(DfTypedObject.java:1418)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperty(TypedPreferences.java:465)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.loadProperties(TypedPreferences.java:343)
+	at com.documentum.fc.common.DfPreferences.loadProperties(DfPreferences.java:377)
+	at com.documentum.fc.common.impl.preferences.PreferencesManager.<init>(PreferencesManager.java:39)
+	at com.documentum.fc.common.DfPreferences.initialize(DfPreferences.java:64)
+	at com.documentum.fc.common.DfPreferences.getInstance(DfPreferences.java:43)
+	at com.documentum.fc.client.DfSimpleDbor.getDefaultDbor(DfSimpleDbor.java:78)
+	at com.documentum.fc.client.DfSimpleDbor.<init>(DfSimpleDbor.java:66)
+	at com.documentum.fc.client.DfClient$ClientImpl.<init>(DfClient.java:350)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:766)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+INFO main com.documentum.fc.client.security.impl.JKSKeystoreUtilForDfc - keystore file name is C:\Users\Marcin\workspace-trainings\DFCalstom\bin\dfc.keystore
+INFO main com.documentum.fc.client.security.impl.InitializeKeystoreForDfc - [DFC_SECURITY_IDENTITY_LOADED] Loaded identity from keystore, DFC alias=dfc, identity=dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.client.security.impl.AuthenticationMgrForDfc - identity for authentication is dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka
+INFO main com.documentum.fc.impl.RuntimeContext - DFC Version is 7.1.0000.0098
+INFO Timer-1 com.documentum.fc.client.impl.bof.cache.ClassCacheManager$CacheCleanupTask - [DFC_BOF_RUNNING_CLEANUP] Running class cache cleanup task
+WARN main com.documentum.fc.impl.util.PBEUtils - DfException:: THREAD: main; MSG: [DFC_API_W_ATTEMPT_TO_USE_DEPRECATED_CRYPTO_API] WARNING: Program attempts to use deprecated non-FIPS compliant cryptography API.  This is not recommended.  Please consult the documentation for more detail.   ; ERRORCODE: ff; NEXT: null
+	at com.documentum.fc.impl.util.PBEUtils.decrypt(PBEUtils.java:125)
+	at com.documentum.fc.impl.util.RegistryPasswordUtils.decrypt(RegistryPasswordUtils.java:114)
+	at com.documentum.fc.common.DfPreferences$PasswordHandler.get(DfPreferences.java:1973)
+	at com.documentum.fc.client.DfTypedObject.doGetString(DfTypedObject.java:619)
+	at com.documentum.fc.client.DfTypedObject.getString(DfTypedObject.java:597)
+	at com.documentum.fc.common.impl.preferences.TypedPreferences.getString(TypedPreferences.java:154)
+	at com.documentum.fc.client.DfTypedObject.getStringUnchecked(DfTypedObject.java:674)
+	at com.documentum.fc.common.DfPreferences.getGlobalRegistryPassword(DfPreferences.java:1110)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getSboHostLoginInfo(ModuleManager.java:409)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:381)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
+
+INFO main com.documentum.fc.client.impl.connection.docbase.DocbaseConnection - Object protocol version 2
+INFO main com.documentum.fc.client.security.internal.AuthenticationMgr - new identity bundle <dfc_JnKRfMJ6wTQc2YbNXGmS85mR1Cka	1417001494	beherit		GqqtLeRdjnZ5ADEpL7MU1TDqVkumOvOiFprNxzZi+ksnyMgArMWC9ooE03qS6Ken2y7rKqd/q8znv/yuw8G7/cFaGw3h61XR+xIMQxjIDe3RqVJAT/cd/+m0aCtn7psMogJSfQdaha+hy0BhU6tNv1vVKy/NTQ845oa1StxaHkA=>
+WARN main com.documentum.fc.client.impl.bof.classmgmt.ModuleManager - [DFC_BOF_COULDNT_CONNECT_TO_REGISTRY] Unable to connect to module registry, docbase name juventus username dm_bof_registry.
+DfAuthenticationException:: THREAD: main; MSG: [DM_SESSION_E_AUTH_FAIL]error:  "Authentication failed for user dm_bof_registry with docbase juventus."; ERRORCODE: 100; NEXT: null
+	at com.documentum.fc.client.impl.docbase.DocbaseExceptionMapper.newException(DocbaseExceptionMapper.java:52)
+	at com.documentum.fc.client.impl.connection.docbase.MessageEntry.getException(MessageEntry.java:39)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseMessageManager.getException(DocbaseMessageManager.java:137)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.checkForMessages(NetwiseDocbaseRpcClient.java:310)
+	at com.documentum.fc.client.impl.connection.docbase.netwise.NetwiseDocbaseRpcClient.applyForObject(NetwiseDocbaseRpcClient.java:653)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection$8.evaluate(DocbaseConnection.java:1370)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.evaluateRpc(DocbaseConnection.java:1129)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.applyForObject(DocbaseConnection.java:1362)
+	at com.documentum.fc.client.impl.docbase.DocbaseApi.authenticateUser(DocbaseApi.java:1867)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.authenticate(DocbaseConnection.java:435)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.open(DocbaseConnection.java:130)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:99)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnection.<init>(DocbaseConnection.java:59)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionFactory.newDocbaseConnection(DocbaseConnectionFactory.java:26)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.createNewConnection(DocbaseConnectionManager.java:180)
+	at com.documentum.fc.client.impl.connection.docbase.DocbaseConnectionManager.getDocbaseConnection(DocbaseConnectionManager.java:110)
+	at com.documentum.fc.client.impl.session.SessionFactory.newSession(SessionFactory.java:23)
+	at com.documentum.fc.client.impl.session.PrincipalAwareSessionFactory.newSession(PrincipalAwareSessionFactory.java:44)
+	at com.documentum.fc.client.impl.session.PooledSessionFactory.newSession(PooledSessionFactory.java:49)
+	at com.documentum.fc.client.impl.session.SessionManager.getSessionFromFactory(SessionManager.java:120)
+	at com.documentum.fc.client.impl.session.SessionManager.newSession(SessionManager.java:70)
+	at com.documentum.fc.client.impl.session.SessionManager.getSession(SessionManager.java:177)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.connect(ModuleManager.java:385)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.init(ModuleManager.java:340)
+	at com.documentum.fc.client.impl.bof.classmgmt.ModuleManager.getInstance(ModuleManager.java:43)
+	at com.documentum.fc.client.security.impl.DfcIdentityPublisher.<init>(DfcIdentityPublisher.java:44)
+	at com.documentum.fc.client.security.internal.RegistrationMgr.register(RegistrationMgr.java:34)
+	at com.documentum.fc.impl.RuntimeContext.<clinit>(RuntimeContext.java:195)
+	at com.documentum.fc.client.DfClient.<clinit>(DfClient.java:772)
+	at com.alstom.dfc.Connector.connectToDocbase(Connector.java:55)
+	at com.alstom.dfc.Standalone.main(Standalone.java:18)
